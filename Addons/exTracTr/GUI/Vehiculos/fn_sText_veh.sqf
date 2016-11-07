@@ -41,8 +41,8 @@ switch (_bando) do
 };
 
 _dname = format ["¬%1", _dname];
-_tit = [_dname,5,8,1,0,1,2] call TTST;
-_sep = ["¬",0,8,0.8,0,0,0] call TTST;
+_tit = [_dname,5,8,1,0,1,2] call stir_fnc_str_t;
+_sep = ["¬",0,8,0.8,0,0,0] call stir_fnc_str_t;
 
 _vclass =[_vclass,"verde"] call exT_fnc_colorST;
 _bando =[_bando,"verde"] call exT_fnc_colorST;
@@ -56,7 +56,7 @@ _p2 = ["¬Plazas: ","blanco"] call exT_fnc_colorST;
 _p3 = ["¬Velocidad max.: ","blanco"] call exT_fnc_colorST;
 _p4 = ["¬Cavallos: ","blanco"] call exT_fnc_colorST;
 
-_preT = [[_tit,_sep,_p0,_vclass,_p1,_bando,_p2,_maxSol,_p3,_mVel,_p4,_cv]] call TTST_parse;
+_preT = [[_tit,_sep,_p0,_vclass,_p1,_bando,_p2,_maxSol,_p3,_mVel,_p4,_cv]] call stir_fnc_str_parse;
 
 _ruta = [_data] call exT_fnc_getOPicture;
 if (_ruta == "") then {_ruta = [_data] call exT_fnc_getPicture;};

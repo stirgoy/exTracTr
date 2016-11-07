@@ -14,7 +14,7 @@ _alt = _this select 4;
 _handled = false;
 
 //Conversor a String
-_keyP = [_keyP] call exT_fnc_KHC;
+_keyP = [_keyP] call stir_fnc_KHC;
 
 switch ( _keyP ) do
 {

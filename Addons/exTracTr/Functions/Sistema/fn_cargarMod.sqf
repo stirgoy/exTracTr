@@ -23,9 +23,6 @@ exT_KeyHandler = (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call
 
 _tmr = time;
 [(format ["Compilando funciones...  (%1)",_tmr]),"rpt"] call exT_fnc_Dev;
-//funciones compiladas
-_handle = [] spawn exT_fnc_TTST;
-waitUntil {scriptDone _handle};
 
 //Ajustes
 _tmr = time;

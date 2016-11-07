@@ -18,7 +18,7 @@ disableSerialization;
 
 
 //pb display
-cutRsc ["exT", "BLACK"];
+cutRsc ["stir", "BLACK"];
 createDialog "exT_GUI_pb";
 waitUntil {!(isNull findDisplay 77755)};
 _displayPb = findDisplay 77755;
@@ -44,7 +44,7 @@ _total = count _confArr;
 	_vClass = [_classN] call exT_fnc_getVClass;
 	_vClass = toLower _vClass;
 	//pb upddate
-	_pbPos = [_forEachIndex,0,_total,0,1] call exT_fnc_mapear;
+	_pbPos = [_forEachIndex,0,_total,0,1] call stir_fnc_mapear;
 	_pb_pb progressSetPosition _pbPos;
 
 	_pbPos = _pbPos * 100;

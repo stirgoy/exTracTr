@@ -29,7 +29,6 @@ class CfgFunctions
 		class exT_EVH
 		{
 			file = "exTracTr\Functions\Eventos";
-			class KHC {};
 			class keyHandler {};
 
 		};
@@ -43,8 +42,6 @@ class CfgFunctions
 			class actualizarjustes {};
 			class guardaAjustes {};
 			class recuperarVehiculos {};
-			class mapear {};
-			class TTST {};
 			class colorST {};
 			class dev {};
 			class keyList {};			//Lista de teclas para ajustes

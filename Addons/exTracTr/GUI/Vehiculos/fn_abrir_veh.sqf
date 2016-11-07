@@ -83,4 +83,4 @@ _combo lbSetCurSel 0;
 _lstEncontrado lbSetCurSel 0;
 
 
-cutRsc ["exT", "BLACK IN"];
+cutRsc ["stir", "BLACK IN"];
