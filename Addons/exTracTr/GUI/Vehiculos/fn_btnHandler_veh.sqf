@@ -37,7 +37,7 @@ switch ( _mode ) do
 
 	};
 
-	case "QTAE": //quitar tod_o a exportar
+/*	case "QTAE": //quitar todo a exportar EN DESUSO
 	{
 		_tot = (lbSize _lst1) - 1;
 
@@ -60,7 +60,7 @@ switch ( _mode ) do
 			exT_vehExportLista = _tarr;
 		};
 
-	};
+	};*/
 
 	case "AVE": //añadir veh exportar
 	{
