@@ -1,3 +1,29 @@
+#--------------------
+#       Arma3
+#--------------------
+
+#addon
+*.ini
+*.pbo
+*.bikey
+*.bisign
+
+#infoMod
+mod.cpp
+
+#development
+progresB.sqf
+vehiculos.sqf
+
+#extensions
+*.dll
+
+#addon docs
+*.txt
+*.url
+
+#--------------------
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
