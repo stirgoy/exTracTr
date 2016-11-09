@@ -37,7 +37,7 @@ switch ( _mode ) do
 
 	};
 
-/*	case "QTAE": //quitar todo a exportar EN DESUSO
+	case "QTAE": //quitar todo a exportar
 	{
 		_tot = (lbSize _lst1) - 1;
 
@@ -49,18 +49,17 @@ switch ( _mode ) do
 			_lst0 lbSetData [_pos,_dt];
 			_lst0 lbSetTooltip [_pos,_dt];
 
-			_lst0 lbDelete _i;
+			_lst1 lbDelete _i;
 
-			//exT_vehExportLista pushBack _dt;
-
-			_posi = exT_vehExportLista find _datos;
+			_posi = exT_vehExportLista find _dt;
+			//exT_vehExportLista = exT_vehExportLista - [_dt];
 			exT_vehExportLista set [_posi,nil];
 			_tarr= [];
 			{ if (!(isNil "_x")) then {_tarr pushBack _x;}; } forEach exT_vehExportLista;	//rescrivimos array omotiendo nil
 			exT_vehExportLista = _tarr;
 		};
 
-	};*/
+	};
 
 	case "AVE": //añadir veh exportar
 	{
