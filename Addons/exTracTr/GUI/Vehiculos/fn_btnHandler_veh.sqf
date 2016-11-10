@@ -30,10 +30,11 @@ switch ( _mode ) do
 			_lst1 lbSetData [_pos,_dt];
 			_lst1 lbSetTooltip [_pos,_dt];
 
-			_lst0 lbDelete _i;
+			//_lst0 lbDelete _i;
 
 			exT_vehExportLista pushBack _dt;
 		};
+		lbClear _lst0;
 
 	};
 
@@ -49,15 +50,17 @@ switch ( _mode ) do
 			_lst0 lbSetData [_pos,_dt];
 			_lst0 lbSetTooltip [_pos,_dt];
 
-			_lst1 lbDelete _i;
+			//_lst1 lbDelete _i;
 
-			_posi = exT_vehExportLista find _dt;
-			//exT_vehExportLista = exT_vehExportLista - [_dt];
-			exT_vehExportLista set [_posi,nil];
-			_tarr= [];
-			{ if (!(isNil "_x")) then {_tarr pushBack _x;}; } forEach exT_vehExportLista;	//rescrivimos array omotiendo nil
-			exT_vehExportLista = _tarr;
+			//_posi = exT_vehExportLista find _dt;
+			exT_vehExportLista = exT_vehExportLista - [_dt];
+			//exT_vehExportLista set [_posi,nil];
+			//_tarr= [];
+			//{ if (!(isNil "_x")) then {_tarr pushBack _x;}; } forEach exT_vehExportLista;	//rescrivimos array omotiendo nil
+			//exT_vehExportLista = _tarr;
+
 		};
+		lbClear _lst1;
 
 	};
 

@@ -5,7 +5,7 @@
 
 _ver = getNumber ( configFile / "exTracTr" / "versionMod" );
 
-profileNamespace setVariable ["exTracT_ajustes_key_menu","º"];
+profileNamespace setVariable ["exTracT_ajustes_key_menu","1"];
 profileNamespace setVariable ["exTracT_ajustes_key_menu_ctrl",false];
 profileNamespace setVariable ["exTracT_ajustes_key_menu_shift",false];
 profileNamespace setVariable ["exTracT_ajustes_key_menu_alt",false];
